@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mar.io/portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div id="particles-js"></div>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">mar.io</a>
+                <ul id="sidemenu">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <a href="cv/CV.pdf" title="" download><button type="button">DOWNLOAD CV</button></a>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span class="greetings"></span></p>
+                <h1>I'm Mario <span>Vinandy</span></h1>
+                <h2>a Computer Science undergraduate at BINUS University, specializing in the dynamic realm of Database Technology. I have curiosity for data management, databases design, and website development. Currently, I am open for internship opportunities where I can keep learning and deepen my abilities.<br><br>Beyond the realm of code and queries, I find inspiration in the world or art, where creativity knows no bounds. I believe that technology and art intersect in an unexpected exciting ways and I'm eager to show that to everyone through my projects. <a href="about.html">Learn More..</a></h2>
+                
+            </div>
+            <div class="contacts">
+                <li><a href="https://www.linkedin.com/in/mario-vinandy-8062bb293/" target="_blank"><img src="images/linkedin logo.png"></a></li>
+                <li><a href="https://github.com/mariovinandyy" target="_blank"><img src="images/github logo.png"></a></li>
+                <li><a href="https://instagram.com/mariovinandy" target="_blank"><img src="images/ig logo.png" alt=""></a></li>
+                <li><a href="https://wa.me/628972484292" target="_blank"><img src="images/wa logo.png" alt=""></a></li>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script src="https://kit.fontawesome.com/12e1c3d3d3.js" crossorigin="anonymous"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

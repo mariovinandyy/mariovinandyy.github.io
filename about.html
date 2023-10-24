@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mar.io/about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="about">
+        <div id="particles-js"></div>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">mar.io</a>
+                <ul id="sidemenu">
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <a href="cv/CV.pdf" title="" download><button type="button">DOWNLOAD CV</button></a>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="about-content">
+                <div class="about-leftcol">
+                    <h1>About Me.</h1>
+                    <p>I'm a Computer Science undergraduate at BINUS University specializing in Database Technology. I am eager to learn and currently have skills in basic database management, web development, and programming languages. As a BINUSIAN, I have experience as a Freshmen Leader, Freshmen Partner, and the Chairman of Keluarga Mahasiswa Buddhis Dhammavaddhana BINUS University for Alam Sutera area. In my free time, I enjoy doing art-related activities. I believe that technology and art intersect in an exciting ways and I’m eager to show that to everyone through my projects.</p>
+
+                    <div class="about-tabs">
+                        <p class="about-tablinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="about-tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="about-tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="about-tabcontents active-tab" id="skills">
+                        <ul>
+                            <li><span>Language</span><br>Indonesian (Native) <br>English (Fluent)</li>
+                            <li><span>Front-End Web Development</span><br>HTML | CSS | Javascript</li>
+                            <li><span>Database Development</span><br>MySQL</li>
+                            <li><span>Programming Language</span><br>C | Java | Python</li>
+                            <li><span>Programming Language</span><br>Figma | Canva | Photoshop | CorelDRAW</li>
+                        </ul>
+                    </div>
+                    <div class="about-tabcontents" id="experience">
+                        <ul>
+                            <li><span>HIMTI BINUS</span><br>Research and Development Commision Activist (Mar 2022 - Mar 2023)</li>
+                            <li><span>Keluarga Mahasiswa Buddhis Dhammavaddhana (KMBD) BINUS</span><br>Dhamma and Social Division Activist (Jan 2022 - Jan 2023) <br>Asadha Puja 2566 B.E./2023 Event Division (Apr 2022 - Jul 2022) <br>DV Care 2022 Project Manager (Aug 2022 - Dec 2022) <br>KMBD 34th Periode Alam Sutera Chairman (Jan 2023 - present)</li>
+                        </ul>
+                    </div>
+                    <div class="about-tabcontents" id="education">
+                        <ul>
+                            <li><span>2015 - 2018</span><br>Xaverius 1 Junior High School, Palembang</li>
+                            <li><span>2018 - 2021</span><br>Xaverius 1 Senior High School, Palembang</li>
+                            <li><span>2021 - present</span><br>Bina Nusantara University, Jakarta</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-rightcol">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+            </div>
+            <div class="contacts">
+                <li><a href="https://www.linkedin.com/in/mario-vinandy-8062bb293/" target="_blank"><img src="images/linkedin logo.png"></a></li>
+                <li><a href="https://github.com/mariovinandyy" target="_blank"><img src="images/github logo.png"></a></li>
+                <li><a href="https://instagram.com/mariovinandy" target="_blank"><img src="images/ig logo.png" alt=""></a></li>
+                <li><a href="https://wa.me/628972484292" target="_blank"><img src="images/wa logo.png" alt=""></a></li>
+            </div>
+        </div>
+    </div> 
+
+<script>
+    var abouttablinks = document.getElementsByClassName("about-tablinks");
+    var abouttabcontents = document.getElementsByClassName("about-tabcontents");
+    function opentab(tabname){
+        for(abouttablink of abouttablinks){
+            abouttablink.classList.remove("active-link");
+        }
+        for(abouttabcontent of abouttabcontents){
+            abouttabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script src="https://kit.fontawesome.com/12e1c3d3d3.js" crossorigin="anonymous"></script>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script1.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

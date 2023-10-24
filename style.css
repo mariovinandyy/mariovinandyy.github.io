@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(20deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    box-sizing: border-box;
+}
+
+body{
+    background: #101a25;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(at 40% 40%, rgb(30, 144, 255, 0.1) 0px, transparent 50%), radial-gradient(at 90% 10%, rgb(255, 105, 180, 0.1) 0px, transparent 50%), radial-gradient(at 50% 95%, rgb(0, 255, 255, 0.1) 0px, transparent 50%), radial-gradient(at 20% 30%, rgb(50, 205, 50, 0.1) 0px, transparent 50%), radial-gradient(at 90% 90%, rgb(255, 255, 0, 0.1) 0px, transparent 50%), radial-gradient(at 33% 50%, rgb(255, 69, 0, 0.1) 0px, transparent 50%), radial-gradient(at 79% 53%, rgb(128, 0, 128, 0.1) 0px, transparent 50%);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    content: "";
+    z-index: -1;
+    top: 0px;
+    transform: translateZ(0px);
+    overflow-y: scroll;
+    animation: transitionIn 1s;
+}
+
+#particles-js{
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+}
+
+.container{
+    padding: 60px 14%;
+    display: block;
+    padding-bottom: 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: #ffffff;
+    text-shadow: 0 0 20px #0009b4,
+    0 0 40px #8c00ff,
+    0 0 80px #ce0064,
+    0 0 120px #b10000;
+    transition: 0.6s;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+}
+
+.logo{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0024);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 6s infinite;
+}
+
+@keyframes animate{
+    51%, 52%, 54.1%, 57%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    52.1%, 54%, 65.1%, 67%
+    {
+        color: #acc9c1;
+        text-shadow: 0 0 40px #008d6c,
+        0 0 80px #008d6c;
+    }
+    0%, 50%, 57.1%, 65%, 67.1%, 100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #008d6c,
+        0 0 20px #008d6c,
+        0 0 40px #008d6c,
+        0 0 80px #008d6c,
+        0 0 160px #008d6c;
+    }
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: -10%;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 120%;
+}
+
+nav ul button{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    margin-left: 16px;
+}
+
+nav ul button:hover{
+    color: #2a0d38;
+    background-color: #fff;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 28px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.header-text p{
+    max-height: 30px;
+}
+
+.header-text h1{
+    font-size: 56px;
+    margin-top: 20px;
+    font-family: "inter";
+    font-weight: 600;
+}
+
+.header-text h1 span{
+    background: -webkit-linear-gradient(left, white, #a8ffe3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "inter";
+    font-weight: 600;
+}
+
+.header-text h2{
+    font: "Inter";
+    font-size: 17px;
+    margin-top: 16px;
+    line-height: 30px;
+    text-align: justify;
+    font-weight:300;
+}
+
+.header-text a{
+    font: "Inter";
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+}
+
+.header-text a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    transition: 0.3s;
+}
+
+.header-text a:hover::after{
+    width: 100%;
+}
+
+.contacts{
+    margin-top: 36px;
+    display:flex;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.contacts li{
+    list-style: none;
+    margin-right: 32px;
+}
+
+.contacts li a{
+    position: relative;
+}
+
+.contacts li a img{
+    width: 20px;
+    height: 20px;
+}
+
+/*--------------------------ABOUT-----------------------------*/
+
+#about{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(at 40% 40%, rgb(30, 144, 255, 0.1) 0px, transparent 50%), radial-gradient(at 90% 10%, rgb(255, 105, 180, 0.1) 0px, transparent 50%), radial-gradient(at 50% 95%, rgb(0, 255, 255, 0.1) 0px, transparent 50%), radial-gradient(at 20% 30%, rgb(50, 205, 50, 0.1) 0px, transparent 50%), radial-gradient(at 90% 90%, rgb(255, 255, 0, 0.1) 0px, transparent 50%), radial-gradient(at 33% 50%, rgb(255, 69, 0, 0.1) 0px, transparent 50%), radial-gradient(at 79% 53%, rgb(128, 0, 128, 0.1) 0px, transparent 50%);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    content: "";
+    z-index: -1;
+    top: 0px;
+    transform: translateZ(0px);
+    overflow-y: scroll;
+    animation: transitionIn 1s;
+}
+
+.about-content{
+    margin-top: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-leftcol{
+    flex-basis: 55%;
+}
+
+.about-rightcol{
+    flex-basis: 35%;
+}
+
+.about-rightcol img{
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.about-leftcol h1{
+    font-size: 56px;
+    margin-bottom: 24px;
+    color: #fff; 
+    font-family: "inter";
+    font-weight: 900;
+    background: -webkit-linear-gradient(left,rgb(191, 255, 222), #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-leftcol p{
+    text-align: justify;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.about-tabs{
+    display: flex;
+    margin: 20px 0 30px;
+}
+
+.about-tablinks{
+    margin-right: 36px;
+    cursor: pointer;
+    position: relative;
+}
+
+.about-tabs p{
+    font-weight: 600;
+}
+
+.about-tablinks::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #71ccba;
+    position: absolute;
+    left: -10%;
+    bottom: -3px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+/*
+.about-tablinks:hover::after{
+    width: 120%;
+}
+*/
+
+.about-tablinks.active-link::after{
+    width: 120%;
+    opacity: 1;
+}
+
+.about-tabcontents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.about-tabcontents ul li span{
+    color: #71ccba;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.about-tabcontents{
+    display: none;
+}
+
+.about-tabcontents.active-tab{
+    display: block;
+}
+
+#about .contacts{
+    margin-top: 60px;
+}
+
+/*--------------------------PROJECTS-----------------------------*/
+
+#projects{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(at 40% 40%, rgb(30, 144, 255, 0.1) 0px, transparent 50%), radial-gradient(at 90% 10%, rgb(255, 105, 180, 0.1) 0px, transparent 50%), radial-gradient(at 50% 95%, rgb(0, 255, 255, 0.1) 0px, transparent 50%), radial-gradient(at 20% 30%, rgb(50, 205, 50, 0.1) 0px, transparent 50%), radial-gradient(at 90% 90%, rgb(255, 255, 0, 0.1) 0px, transparent 50%), radial-gradient(at 33% 50%, rgb(255, 69, 0, 0.1) 0px, transparent 50%), radial-gradient(at 79% 53%, rgb(128, 0, 128, 0.1) 0px, transparent 50%);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    content: "";
+    z-index: -1;
+    top: 0px;
+    transform: translateZ(0px);
+    overflow-y: scroll;
+    animation: transitionIn 1s;
+}
+
+.proj-content{
+    margin-top: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.proj-content h1{
+    font-size: 56px;
+    margin-bottom: 24px;
+    color: #fff; 
+    font-family: "inter";
+    font-weight: 900;
+    background: -webkit-linear-gradient(left,rgb(191, 255, 222), #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.proj-category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.proj-lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.proj-col{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.proj-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #71ccba);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+.layer h3{
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.layer p{
+    font-size: 14px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #71ccba;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.proj-col:hover img{
+    transform: scale(1.1);
+}
+
+.proj-col:hover .layer{
+    opacity: 1;
+}
+
+.proj-categorylinks{
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    font-size: 17px;
+}
+
+.proj-categorylinks::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: -10%;
+    bottom: -6px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.proj-categorylinks.active-category::after{
+    width: 120%;
+    opacity: 1;
+}
+
+.proj-lists{
+    display: none;
+}
+
+.proj-lists.active-catlist{
+    display: flex;
+}
+
+#projects .contacts{
+    margin-top: 60px;
+}
+
+/* ---------- css for small screens ---------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        padding: 60px 8%;
+        display: block;
+        padding-bottom: 60px;
+    }
+    .header-text{
+        margin-top: 15%;
+    }
+    .header-text p{
+        font-size: 16px;
+        max-height: 8px;
+    }
+    .header-text h1{
+        font-size: 24px;
+    }
+    .header-text h2{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .header-text h2 a{
+        font-size: 14px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        position: relative;
+    }
+    nav ul{
+        background: rgba(19, 74, 74, 1);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .contacts li a img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .contacts li{
+        margin-right: 24px;
+    }
+    .about-content{
+        display: block;
+    }
+    .about-rightcol{
+        margin-top: 28px;
+    }
+    .about-rightcol img{
+        width: 70%;
+    }
+    .about-leftcol h1{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .about-leftcol p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .about-tabcontents ul li{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .about-tabcontents ul li span{
+        line-height: 12px;
+    }
+    .about-tabs{
+        margin: 20px 0 10px;
+    }
+    .about-tablinks{
+        margin-right: 20px;
+    }
+    .proj-content h1{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .proj-category{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0 0px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .proj-category p{
+        font-size: 14px;
+    }
+    .proj-lists{
+        margin-top: 20px;
+    }
+}

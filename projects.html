@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mar.io/about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="projects">
+        <div id="particles-js"></div>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">mar.io</a>
+                <ul id="sidemenu">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <a href="cv/CV.pdf" title="" download><button type="button">DOWNLOAD CV</button></a>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="proj-content">
+                <h1>Projects.</h1>
+                <div class="proj-category">
+                    <p class="proj-categorylinks active-category" onclick="opentab('All')">All</p>
+                    <p class="proj-categorylinks" onclick="opentab('Web')">Web</p>
+                    <p class="proj-categorylinks" onclick="opentab('Mobile')">Mobile</p>
+                    <p class="proj-categorylinks" onclick="opentab('Others')">Others</p>
+                </div>
+                <div class="proj-lists active-catlist" id="All">
+                    <div class="proj-col">
+                        <img src="images/proj1.png">
+                        <div class="layer">
+                            <h3>FArbucks</h3>
+                            <p>Front-End Prototype of a Coffe Shop Website</p>
+                            <a href="https://github.com/mariovinandyy/FArbucks" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj2.png">
+                        <div class="layer">
+                            <h3>Infinity</h3>
+                            <p>Front-End Prototype of a Space Station Website</p>
+                            <a href="https://github.com/mariovinandyy/infinity" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj3.png">
+                        <div class="layer">
+                            <h3>TheBorobudur</h3>
+                            <p>UI/UX of a Tourist Attraction Website</p>
+                            <a href="https://www.figma.com/proto/m9vnlzCaXx7bh9ikfQTsyc/TheBorobudur?page-id=0%3A1&type=design&node-id=1-2&viewport=578%2C313%2C0.06&t=qLwI5wJOX6HXY6Ej-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj1m.png">
+                        <div class="layer">
+                            <h3>Foodware</h3>
+                            <p>UI/UX of a Food Waste Managing Application</p>
+                            <a href="https://www.figma.com/proto/bQeM9AcWh4YnailvJmrEGb/FoodWare?page-id=0%3A1&type=design&node-id=1-5&viewport=102%2C421%2C0.21&t=Y3d25YU8N0nfDMsN-1&scaling=scale-down&starting-point-node-id=1%3A5&show-proto-sidebar=1&mode=design" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj1o.png">
+                        <div class="layer">
+                            <h3>Diabetes Prediction and Visualization using Spark’s Random Forest Classification</h3>
+                            <p>Big Data Analysis and Visualization</p>
+                            <a href="https://github.com/mariovinandyy/diabetesTrainingModel" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj2o.png">
+                        <div class="layer">
+                            <h3>Hotel Management System</h3>
+                            <p>Database and Data Flow Design for Hotel Room Booking Process</p>
+                            <a href="https://github.com/mariovinandyy/hotelManagementDB" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj4.png">
+                        <div class="layer">
+                            <h3>Mario's Portfolio Website</h3>
+                            <p>Front-End Website for Mario's Portfolio</p>
+                            <a href="https://mariovinandyy.github.io" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-lists" id="Web">
+                    <div class="proj-col">
+                        <img src="images/proj1.png">
+                        <div class="layer">
+                            <h3>FArbucks</h3>
+                            <p>Front-End Prototype of a Coffe Shop Website</p>
+                            <a href="https://github.com/mariovinandyy/FArbucks" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj2.png">
+                        <div class="layer">
+                            <h3>Infinity</h3>
+                            <p>Front-End Prototype of a Space Station Website</p>
+                            <a href="https://github.com/mariovinandyy/infinity" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj3.png">
+                        <div class="layer">
+                            <h3>TheBorobudur</h3>
+                            <p>UI/UX of a Tourist Attraction Website</p>
+                            <a href="https://www.figma.com/proto/m9vnlzCaXx7bh9ikfQTsyc/TheBorobudur?page-id=0%3A1&type=design&node-id=1-2&viewport=578%2C313%2C0.06&t=qLwI5wJOX6HXY6Ej-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj4.png">
+                        <div class="layer">
+                            <h3>Mario's Portfolio Website</h3>
+                            <p>Front-End Website for Mario's Portfolio</p>
+                            <a href="https://mariovinandyy.github.io" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-lists" id="Mobile">
+                    <div class="proj-col">
+                        <img src="images/proj1m.png">
+                        <div class="layer">
+                            <h3>Foodware</h3>
+                            <p>UI/UX of a Food Waste Managing Application</p>
+                            <a href="https://www.figma.com/proto/bQeM9AcWh4YnailvJmrEGb/FoodWare?page-id=0%3A1&type=design&node-id=1-5&viewport=102%2C421%2C0.21&t=Y3d25YU8N0nfDMsN-1&scaling=scale-down&starting-point-node-id=1%3A5&show-proto-sidebar=1&mode=design" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-lists" id="Others">
+                    <div class="proj-col">
+                        <img src="images/proj1o.png">
+                        <div class="layer">
+                            <h3>Diabetes Prediction and Visualization using Spark’s Random Forest Classification</h3>
+                            <p>Big Data Analysis and Visualization</p>
+                            <a href="https://github.com/mariovinandyy/diabetesTrainingModel" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="proj-col">
+                        <img src="images/proj2o.png">
+                        <div class="layer">
+                            <h3>Hotel Management System</h3>
+                            <p>Database and Data Flow Design for Hotel Room Booking Process</p>
+                            <a href="https://github.com/mariovinandyy/hotelManagementDB" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <li><a href="https://www.linkedin.com/in/mario-vinandy-8062bb293/" target="_blank"><img src="images/linkedin logo.png"></a></li>
+                <li><a href="https://github.com/mariovinandyy" target="_blank"><img src="images/github logo.png"></a></li>
+                <li><a href="https://instagram.com/mariovinandy" target="_blank"><img src="images/ig logo.png" alt=""></a></li>
+                <li><a href="https://wa.me/628972484292" target="_blank"><img src="images/wa logo.png" alt=""></a></li>
+            </div>
+        </div>
+    </div> 
+
+    <script>
+        var projcategorylinks = document.getElementsByClassName("proj-categorylinks");
+        var projlists = document.getElementsByClassName("proj-lists");
+        function opentab(tabname){
+            for(projcategorylink of projcategorylinks){
+                projcategorylink.classList.remove("active-category");
+            }
+            for(projlist of projlists){
+                projlist.classList.remove("active-catlist");
+            }
+            event.currentTarget.classList.add("active-category");
+            document.getElementById(tabname).classList.add("active-catlist");
+        }
+    </script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script> 
+
+<script src="https://kit.fontawesome.com/12e1c3d3d3.js" crossorigin="anonymous"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
